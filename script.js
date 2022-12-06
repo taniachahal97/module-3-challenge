@@ -4,27 +4,17 @@
 var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerLetters = "abcdefghijklmnopqrstuvwxyz";
 var numericText = "0123456789";
-var specialCharacters = "@$#*&-"
-var randomPassword = "";
+var specialCharacters = "!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+
 
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
 
 
 //define function that takes input from users 
 function generatePassword()
 {
+  var randomPassword = "";
 
   // ask user the length for the password  
   var totalLength = parseInt(prompt("What length do you want for your password"));
@@ -81,7 +71,6 @@ function generatePassword()
         }
       
           //return final password value 
-
         return randomPassword;
         
       }
@@ -119,3 +108,17 @@ function generatePassword()
   }
 
 }
+
+
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
