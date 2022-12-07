@@ -15,8 +15,8 @@ Clone the module-3-challenge repository to your local machine. The module-3-chal
 Open the index.html file in VS Code and run the file in the browser to view the webpage. 
 
 ![portfolio image 1](images/image-1.png)
-![portfolio image 3](images/image-2.png)
-![portfolio image 2](images/image-3.png)
+![portfolio image 3](images/image-3.png)
+![portfolio image 2](images/image-4.png)
 
 
 ## License
